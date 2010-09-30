@@ -10,9 +10,9 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASE_ENGINE='mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME='djangostack'             # Or path to database file if using sqlite3.
-DATABASE_USER='bitnami'             # Not used with sqlite3.
-DATABASE_PASSWORD='a3729a9f27'         # Not used with sqlite3.
+DATABASE_NAME='qrsite'             # Or path to database file if using sqlite3.
+DATABASE_USER='admin'             # Not used with sqlite3.
+DATABASE_PASSWORD='Zx7ql'         # Not used with sqlite3.
 DATABASE_HOST=''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT='3306'             # Set to empty string for default. Not used with sqlite3.
 
@@ -63,13 +63,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'Tutorial.urls'
+ROOT_URLCONF = 'qr.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    'C:/Users/Rob/BitNami DjangoStack projects/Tutorial/templates'
+    'qr/templates'
 )
 
 INSTALLED_APPS = (
@@ -78,5 +78,5 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.admin',
-    'Tutorial.polls',
+    'qr.polls',
 )
