@@ -1,5 +1,5 @@
 # Create your views here.
-from Tutorial.polls.models import Poll, Choice
+from qr.polls.models import Poll, Choice
 from django.template import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse

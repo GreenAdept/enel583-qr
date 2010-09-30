@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from Tutorial.polls.models import Poll
+from qr.polls.models import Poll
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -21,6 +21,5 @@ urlpatterns = patterns('',
     (r'^$', 'django.views.generic.list_detail.object_list', info_dict),
     (r'^(?P<object_id>\d+)/$', 'django.views.generic.list_detail.object_detail', info_dict),
     (r'^(?P<object_id>\d+)/results/$', 'django.views.generic.list_detail.object_detail', dict(info_dict, template_name='polls/results.html'), 'poll_results'),
-    url(r'^(?P<object_id>\d+)/vote/$', 'Tutorial.polls.views.vote'),
-    (r'^admin/', include(admin.site.urls)),
+    url(r'^(?P<object_id>\d+)/vote/$', 'qr.polls.views.vote'),
 )
